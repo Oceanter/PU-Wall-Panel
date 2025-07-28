@@ -1,38 +1,127 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Oceanter Materials</title>
   <style>
-    body { font-family: sans-serif; margin: 0; padding: 0; background: #f2f2f2; }
-    header { background: #2c3e50; color: white; padding: 20px; text-align: center; }
-    section { padding: 20px; max-width: 800px; margin: auto; background: white; margin-top: 20px; }
-    footer { background: #2c3e50; color: white; text-align: center; padding: 10px; margin-top: 40px; }
-    h1 { margin: 0; }
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #e0f7fa;
+      color: #003b5c;
+    }
+    header {
+      background-color: #0077b6;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    header img {
+      width: 60px;
+      vertical-align: middle;
+    }
+    header h1 {
+      display: inline;
+      margin-left: 15px;
+      font-size: 28px;
+    }
+    section {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+    }
+    .product-card {
+      background-color: white;
+      border-radius: 10px;
+      padding: 15px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+    .product-card img {
+      max-width: 100%;
+      border-radius: 6px;
+    }
+    form {
+      display: grid;
+      gap: 12px;
+    }
+    input, textarea {
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 16px;
+    }
+    button {
+      padding: 12px;
+      background-color: #0077b6;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+    .whatsapp {
+      display: inline-block;
+      margin-top: 20px;
+      background-color: #25d366;
+      color: white;
+      padding: 12px 20px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    footer {
+      background-color: #003b5c;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
   </style>
 </head>
 <body>
+
   <header>
+    <img src="https://cdn-icons-png.flaticon.com/512/616/616408.png" alt="Dolphin Logo">
     <h1>Oceanter Materials</h1>
-    <p>PU Stone Panels · Decorative Wall Solutions</p>
   </header>
+
   <section>
-    <h2>About Us</h2>
-    <p>Oceanter Materials is a professional exporter of PU culture stone and decorative wall panels. We provide innovative, eco-friendly, and customizable solutions for global clients.</p>
-
     <h2>Our Products</h2>
-    <ul>
-      <li>PU Stone Panels</li>
-      <li>3D Wall Boards</li>
-      <li>Fire-Resistant Decorative Panels</li>
-    </ul>
-
-    <h2>Contact</h2>
-    <p>Email: info@oceanter.com</p>
-    <p>WhatsApp: +86 xxx xxxx xxxx</p>
+    <div class="product-grid">
+      <div class="product-card">
+        <img src="https://via.placeholder.com/300x200?text=PU+Stone+1" alt="Product 1" />
+        <h3>PU Stone Panel A</h3>
+        <p>High quality, lightweight, easy to install.</p>
+      </div>
+      <div class="product-card">
+        <img src="https://via.placeholder.com/300x200?text=PU+Stone+2" alt="Product 2" />
+        <h3>PU Stone Panel B</h3>
+        <p>UV-resistant, waterproof, and durable.</p>
+      </div>
+    </div>
   </section>
+
+  <section>
+    <h2>Contact Us</h2>
+    <form>
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <input type="tel" name="phone" placeholder="Phone Number" />
+      <textarea name="message" rows="5" placeholder="Your Message"></textarea>
+      <button type="submit">Send Inquiry</button>
+    </form>
+    <a class="whatsapp" href="https://wa.me/8613800000000" target="_blank">📱 Chat on WhatsApp</a>
+  </section>
+
   <footer>
     &copy; 2025 Oceanter Materials. All rights reserved.
   </footer>
+
 </body>
 </html>
