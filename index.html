@@ -2,125 +2,162 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Oceanter Materials</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Oceanter | Decor Technology</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet" />
   <style>
     body {
-      font-family: Arial, sans-serif;
       margin: 0;
-      background-color: #e0f7fa;
-      color: #003b5c;
-    }
-    header {
+      padding: 0;
       background-color: #0077b6;
+      color: #ffffff;
+      font-family: 'Montserrat', sans-serif;
+    }
+
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 20px 50px;
+      background-color: #005f87;
+    }
+
+    .logo img {
+      height: 60px;
+    }
+
+    nav a {
       color: white;
-      padding: 20px;
+      text-decoration: none;
+      margin-left: 20px;
+      font-weight: 600;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 100px 20px;
+    }
+
+    .hero h1 {
+      font-size: 48px;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      font-size: 20px;
+      margin-bottom: 30px;
+    }
+
+    .button {
+      background-color: #00b4d8;
+      color: white;
+      padding: 12px 30px;
+      border: none;
+      border-radius: 30px;
+      font-size: 16px;
+      cursor: pointer;
+      text-decoration: none;
+    }
+
+    .section {
+      padding: 60px 20px;
       text-align: center;
     }
-    header img {
-      width: 60px;
-      vertical-align: middle;
-    }
-    header h1 {
-      display: inline;
-      margin-left: 15px;
-      font-size: 28px;
-    }
-    section {
-      padding: 40px 20px;
-      max-width: 1000px;
-      margin: auto;
-    }
+
     .product-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 20px;
-    }
-    .product-card {
-      background-color: white;
-      border-radius: 10px;
-      padding: 15px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-      text-align: center;
-    }
-    .product-card img {
-      max-width: 100%;
-      border-radius: 6px;
-    }
-    form {
-      display: grid;
-      gap: 12px;
-    }
-    input, textarea {
-      padding: 10px;
-      border: 1px solid #ccc;
-      border-radius: 6px;
-      font-size: 16px;
-    }
-    button {
-      padding: 12px;
-      background-color: #0077b6;
-      color: white;
-      border: none;
-      border-radius: 6px;
-      cursor: pointer;
-      font-size: 16px;
-    }
-    .whatsapp {
-      display: inline-block;
-      margin-top: 20px;
-      background-color: #25d366;
-      color: white;
-      padding: 12px 20px;
-      border-radius: 6px;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    footer {
-      background-color: #003b5c;
-      color: white;
-      text-align: center;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
       padding: 20px;
+    }
+
+    .product-grid img {
+      width: 100%;
+      border-radius: 10px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      background-color: #005f87;
+      font-size: 14px;
+    }
+
+    .whatsapp {
+      margin-top: 20px;
+      display: inline-block;
+      color: white;
+    }
+
+    .inquiry-form {
+      background-color: #023e8a;
+      padding: 30px;
+      border-radius: 10px;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    .inquiry-form input, .inquiry-form textarea {
+      width: 100%;
+      padding: 12px;
+      margin: 10px 0;
+      border: none;
+      border-radius: 5px;
+    }
+
+    .inquiry-form button {
+      background-color: #00b4d8;
+      border: none;
+      padding: 12px 30px;
+      color: white;
+      border-radius: 5px;
+      cursor: pointer;
     }
   </style>
 </head>
 <body>
 
   <header>
-    <img src="https://cdn-icons-png.flaticon.com/512/616/616408.png" alt="Dolphin Logo">
-    <h1>Oceanter Materials</h1>
+    <div class="logo">
+      <img src="images/logo.png" alt="Oceanter Logo" />
+    </div>
+    <nav>
+      <a href="#products">Products</a>
+      <a href="#inquiry">Inquiry</a>
+      <a href="https://wa.me/你的号码" target="_blank">WhatsApp</a>
+    </nav>
   </header>
 
-  <section>
+  <div class="hero">
+    <h1>Oceanter Decor Technology</h1>
+    <p>Innovative PU Stone Panels for Global Decoration Projects</p>
+    <a href="#inquiry" class="button">Get a Quote</a>
+  </div>
+
+  <div class="section" id="products">
     <h2>Our Products</h2>
     <div class="product-grid">
-      <div class="product-card">
-        <img src="https://via.placeholder.com/300x200?text=PU+Stone+1" alt="Product 1" />
-        <h3>PU Stone Panel A</h3>
-        <p>High quality, lightweight, easy to install.</p>
-      </div>
-      <div class="product-card">
-        <img src="https://via.placeholder.com/300x200?text=PU+Stone+2" alt="Product 2" />
-        <h3>PU Stone Panel B</h3>
-        <p>UV-resistant, waterproof, and durable.</p>
-      </div>
+      <img src="images/product1.jpg" alt="PU Stone Panel 1" />
+      <img src="images/product2.jpg" alt="PU Stone Panel 2" />
+      <img src="images/product3.jpg" alt="PU Stone Panel 3" />
     </div>
-  </section>
+  </div>
 
-  <section>
+  <div class="section" id="inquiry">
     <h2>Contact Us</h2>
-    <form>
-      <input type="text" name="name" placeholder="Your Name" required />
-      <input type="email" name="email" placeholder="Your Email" required />
-      <input type="tel" name="phone" placeholder="Phone Number" />
-      <textarea name="message" rows="5" placeholder="Your Message"></textarea>
-      <button type="submit">Send Inquiry</button>
+    <form class="inquiry-form" action="mailto:your@email.com" method="POST" enctype="text/plain">
+      <input type="text" name="Name" placeholder="Your Name" required />
+      <input type="email" name="Email" placeholder="Your Email" required />
+      <textarea name="Message" rows="5" placeholder="Your Message / Inquiry"></textarea>
+      <button type="submit">Submit Inquiry</button>
     </form>
-    <a class="whatsapp" href="https://wa.me/8613800000000" target="_blank">📱 Chat on WhatsApp</a>
-  </section>
+    <div class="whatsapp">
+      Or chat via <a href="https://wa.me/你的号码" target="_blank" style="color:#90e0ef; text-decoration:underline;">WhatsApp</a>
+    </div>
+  </div>
 
   <footer>
-    &copy; 2025 Oceanter Materials. All rights reserved.
+    © 2025 Oceanter Decor Technology. All rights reserved.
   </footer>
 
 </body>
