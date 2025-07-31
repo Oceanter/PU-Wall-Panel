@@ -8,16 +8,20 @@
     /* 全局重置 */
     * { margin: 0; padding: 0; box-sizing: border-box; }
 
+    html, body {
+      height: 100%;
+    }
+
     body {
       font-family: 'Segoe UI', sans-serif;
       color: #fff;
+      /* 1. 大气背景图 */
       background:
-        linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
-        url('https://source.unsplash.com/1600x900/?technology,luxury,pattern')
-        no-repeat center/cover;
+        linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+        url('images/background.jpg') no-repeat center/cover;
       display: flex;
       flex-direction: column;
-      min-height: 100vh;
+      overflow-x: hidden;
     }
 
     header {
@@ -42,7 +46,7 @@
     }
     nav a:hover { color: #fff; }
 
-    /* 主体布局：hero 占 2/5，高度 40vh；showcase 占 3/5，高度 60vh */
+    /* hero 占 2/5 高度 */
     .hero {
       flex: 0 0 40vh;
       text-align: center;
@@ -67,12 +71,13 @@
       100% { width: 0; }
     }
 
+    /* 3 张同尺寸图片占 3/5 高度 */
     .showcase {
       flex: 1 0 60vh;
       display: grid;
-      grid-template-columns: repeat(2, 1fr);
+      grid-template-columns: repeat(3, 1fr);
       gap: 1rem;
-      padding: 1rem;
+      padding: 1rem 2rem;
       background: rgba(255,255,255,0.1);
     }
     .showcase img {
@@ -83,7 +88,9 @@
       box-shadow: 0 4px 12px rgba(0,0,0,0.5);
       transition: transform .3s;
     }
-    .showcase img:hover { transform: scale(1.05); }
+    .showcase img:hover {
+      transform: scale(1.05);
+    }
 
     /* 悬浮 WhatsApp 按钮 */
     .whatsapp-float {
@@ -106,7 +113,7 @@
       text-decoration: none;
     }
 
-    /* 跟随内容的 Footer */
+    /* footer 跟随内容 */
     footer {
       background: rgba(0,0,0,0.5);
       width: 100%;
@@ -138,8 +145,10 @@
   </div>
 
   <div class="showcase">
+    <!-- 3 张相同尺寸图片 -->
     <img src="images/products/product1.jpg" alt="Panel 1">
     <img src="images/products/product2.jpg" alt="Panel 2">
+    <img src="images/products/product3.jpg" alt="Panel 3">
   </div>
 
   <div class="whatsapp-float">
@@ -152,4 +161,3 @@
 
 </body>
 </html>
-
