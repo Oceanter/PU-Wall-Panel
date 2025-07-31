@@ -15,7 +15,7 @@
     body {
       font-family: 'Segoe UI', sans-serif;
       color: #fff;
-      /* 1. 大气背景图 */
+      /* 背景图：覆盖大气科技纹理 */
       background:
         linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
         url('images/background.jpg') no-repeat center/cover;
@@ -31,7 +31,13 @@
       padding: 1rem 2rem;
       background: rgba(0,0,0,0.5);
     }
-    .logo-container img { height: 50px; }
+    .logo-container {
+      display: flex;
+      align-items: center;
+    }
+    .logo-container img {
+      height: 100px; /* 放大一倍，从 50px -> 100px */
+    }
     .logo-container h1 {
       margin-left: 0.5rem;
       font-size: 1.8rem;
@@ -88,9 +94,7 @@
       box-shadow: 0 4px 12px rgba(0,0,0,0.5);
       transition: transform .3s;
     }
-    .showcase img:hover {
-      transform: scale(1.05);
-    }
+    .showcase img:hover { transform: scale(1.05); }
 
     /* 悬浮 WhatsApp 按钮 */
     .whatsapp-float {
@@ -145,7 +149,7 @@
   </div>
 
   <div class="showcase">
-    <!-- 3 张相同尺寸图片 -->
+    <!-- 三张等尺寸展示 -->
     <img src="images/products/product1.jpg" alt="Panel 1">
     <img src="images/products/product2.jpg" alt="Panel 2">
     <img src="images/products/product3.jpg" alt="Panel 3">
