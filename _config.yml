@@ -1,0 +1,7 @@
+title: OCEANTER Decor
+description: PU Decorative Wall Panels – Eco-friendly, Durable, Easy Installation
+baseurl: ""
+url: "https://oceanter.github.io/PU-Wall-Panel"
+theme: minima
+plugins:
+  - jekyll-seo-tag
