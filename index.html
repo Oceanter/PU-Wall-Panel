@@ -55,7 +55,7 @@
       overflow: hidden;
       white-space: nowrap;
       border-right: .15em solid #fff;
-      animation: typing 4s steps(30) infinite;
+      animation: typing 8s steps(30) infinite; /* 速度放慢一倍 */
     }
     @keyframes typing {
       0%   { width: 0; }
@@ -63,16 +63,18 @@
       100% { width: 0; }
     }
 
-    /* 产品展示橱窗 */
+    /* 产品展示橱窗 - 两张同尺寸 */
     .showcase {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+      grid-template-columns: repeat(2, 1fr);
       gap: 1rem;
       padding: 2rem;
       background: rgba(255,255,255,0.1);
     }
     .showcase img {
       width: 100%;
+      height: 300px;           /* 统一尺寸 */
+      object-fit: cover;
       border-radius: 8px;
       box-shadow: 0 4px 12px rgba(0,0,0,0.5);
       transition: transform .3s;
@@ -100,7 +102,7 @@
       text-decoration: none;
     }
 
-    /* 跟随内容的 Footer */
+    /* Footer 跟随内容自然流动 */
     footer {
       background: rgba(0,0,0,0.5);
       width: 100%;
@@ -133,9 +135,7 @@
 
   <div class="showcase">
     <img src="images/products/product1.jpg" alt="Panel 1">
-    <img src="images/products/product5.jpg" alt="Panel 5">
-    <img src="images/products/product10.jpg" alt="Panel 10">
-    <img src="images/products/product15.jpg" alt="Panel 15">
+    <img src="images/products/product2.jpg" alt="Panel 2">
   </div>
 
   <div class="whatsapp-float">
