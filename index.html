@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Oceanter Materials</title>
+  <title>OCEANTER</title>
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -17,7 +17,21 @@
       background-color: #0077b6;
       color: white;
       padding: 1rem;
-      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .logo-container {
+      display: flex;
+      align-items: center;
+    }
+    .logo-container img {
+      height: 60px;
+      margin-right: 15px;
+    }
+    .logo-container h1 {
+      margin: 0;
+      font-size: 1.8rem;
     }
     nav {
       background-color: #0096c7;
@@ -33,9 +47,6 @@
     .hero {
       text-align: center;
       padding: 2rem;
-    }
-    .hero img {
-      height: 80px;
     }
     .hero h1 {
       font-size: 2.5rem;
@@ -55,15 +66,20 @@
   </style>
 </head>
 <body>
-  <header><h1>Oceanter Materials</h1></header>
+  <header>
+    <div class="logo-container">
+      <img src="images/logo.png" alt="Logo">
+      <h1>OCEANTER</h1>
+    </div>
+  </header>
   <nav>
     <a href="index.html">Home</a>
     <a href="products.html">Products</a>
     <a href="contact.html">Contact</a>
+    <a href="testimonials.html">Testimonials</a>
     <a href="https://wa.me/8615092436273" target="_blank">WhatsApp</a>
   </nav>
   <div class="hero">
-    <img src="images/logo.png" alt="Logo" />
     <h1>PU Decorative Wall Panels</h1>
     <p>Eco-friendly · Easy to install · Customizable</p>
     <div class="cta">
