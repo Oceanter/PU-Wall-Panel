@@ -1,0 +1,46 @@
+# .github/workflows/deploy.yml
+
+name: "Deploy to GitHub Pages via Actions"
+
+on:
+push:
+branches:
+\- main
+workflow\_dispatch:
+
+jobs:
+build\_and\_deploy:
+runs-on: ubuntu-latest
+steps:
+\# 1. Checkout the repository
+\- name: Checkout code
+uses: actions/checkout\@v3
+
+```
+  # 2. Set up Ruby for Jekyll (if using Jekyll)
+  - name: Setup Ruby
+    uses: ruby/setup-ruby@v1
+    with:
+      ruby-version: '3.0'
+
+  # 3. Install dependencies (Jekyll & plugins)
+  - name: Install dependencies
+    run: |
+      gem install bundler
+      bundle install
+
+  # 4. Build the static site
+  - name: Build site
+    run: bundle exec jekyll build --destination _site
+
+  # 5. Deploy to GitHub Pages
+  - name: Deploy to Pages
+    uses: peaceiris/actions-gh-pages@v3
+    with:
+      github_token: ${{ secrets.GITHUB_TOKEN }}
+      publish_branch: gh-pages
+      publish_dir: _site
+      # optionally set user name/email
+      # committer_name: 'github-actions[bot]'
+      # committer_email: 'github-actions[bot]@users.noreply.github.com'
+```
