@@ -1,71 +1,60 @@
 <!DOCTYPE html>
-<!-- test push -->
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>OCEANTER Decor</title>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
-  <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    body { font-family: 'Montserrat', sans-serif; }
-    nav { display: flex; justify-content: space-between; align-items: center; padding: 20px 5%; background: #fff; position: fixed; width: 100%; z-index: 1000; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
-    nav .logo { font-size: 24px; font-weight: 700; color: #0077b6; }
-    nav ul { display: flex; list-style: none; }
-    nav ul li { margin-left: 30px; }
-    nav ul li a { text-decoration: none; color: #333; font-weight: 500; }
-    .hero { height: 100vh; background: url('images/background.jpg') center/cover no-repeat; display: flex; align-items: center; justify-content: center; color: #fff; text-align: center; }
-    .hero h1 { font-size: 4rem; margin-bottom: 20px; }
-    .hero p { font-size: 1.2rem; margin-bottom: 30px; }
-    .hero a { padding: 15px 30px; background: #0077b6; color: #fff; text-decoration: none; font-weight: 600; border-radius: 5px; }
-    .section { padding: 60px 5%; }
-    .products { display: grid; grid-template-columns: repeat(auto-fill,minmax(300px,1fr)); gap: 30px; }
-    .product-card { background: #fff; border-radius: 10px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
-    .product-card img { width: 100%; height: 200px; object-fit: cover; }
-    .product-card .info { padding: 20px; }
-    .product-card .info h3 { font-size: 1.2rem; margin-bottom: 10px; }
-    .product-card .info p { font-size: 0.9rem; color: #666; margin-bottom: 15px; }
-    .product-card .info a { display: inline-block; padding: 10px 20px; background: #0077b6; color: #fff; text-decoration: none; border-radius: 5px; }
-    footer { background: #0077b6; color: #fff; text-align: center; padding: 20px 5%; }
-  </style>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="OCEANTER - PU Decorative Wall Panels for luxury interiors and exteriors.">
+    <title>OCEANTER | PU Decorative Wall Panels</title>
+    <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <nav>
-    <div class="logo">OCEANTER</div>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="products.html">Products</a></li>
-      <li><a href="contact.html">Contact</a></li>
-      <li><a href="testimonials.html">Testimonials</a></li>
-    </ul>
-  </nav>
+    <header>
+        <nav class="navbar">
+            <div class="logo"><img src="images/logo.png" alt="Oceanter Logo"> OCEANTER</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="testimonials.html">Testimonials</a></li>
+            </ul>
+        </nav>
+    </header>
 
-  <section class="hero">
-    <div>
-      <h1>PU Decorative Wall Panels</h1>
-      <p>Eco-friendly · Durable · Easy Installation</p>
-      <a href="products.html">View Products</a>
-    </div>
-  </section>
-
-  <section class="section">
-    <h2>Featured Products</h2>
-    <div class="products">
-      <!-- Repeat product cards -->
-      <div class="product-card">
-        <img src="images/products/pu-decorative-wall-panel-001.jpg" alt="PU Wall Panel-001" />
-        <div class="info">
-          <h3>PU Wall Panel-001</h3>
-          <p>Lightweight stone-look panel for interior & exterior walls.</p>
-          <a href="product1.html">Details</a>
+    <section class="hero">
+        <div class="hero-content">
+            <h1>PU Decorative Wall Panels</h1>
+            <p>Premium lightweight stone texture panels for luxury interior and exterior designs</p>
         </div>
-      </div>
-      <!-- ... up to 4 visible cards -->
-    </div>
-  </section>
+    </section>
 
-  <footer>
-    &copy; 2025 OCEANTER Materials. All rights reserved.
-  </footer>
+    <section class="highlight-products">
+        <h2>Featured Products</h2>
+        <div class="product-gallery">
+            <div class="product-card">
+                <img src="images/products/product1.jpg" alt="PU Wall Panel-001" />
+                <h3>PU Wall Panel-001</h3>
+                <p>Natural stone texture, easy installation, ideal for walls and facades</p>
+            </div>
+            <div class="product-card">
+                <img src="images/products/product2.jpg" alt="PU Wall Panel-002" />
+                <h3>PU Wall Panel-002</h3>
+                <p>Durable, UV-resistant decorative wall panel with authentic texture</p>
+            </div>
+            <div class="product-card">
+                <img src="images/products/product3.jpg" alt="PU Wall Panel-003" />
+                <h3>PU Wall Panel-003</h3>
+                <p>Elegant surface with realistic stone patterns, easy maintenance</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="about">
+        <h2>About OCEANTER</h2>
+        <p>OCEANTER is committed to sustainable building materials. Our PU decorative panels combine elegant design with durable performance.</p>
+    </section>
+
+    <footer>
+        <p>© 2025 OCEANTER Materials. All rights reserved.</p>
+    </footer>
 </body>
 </html>
